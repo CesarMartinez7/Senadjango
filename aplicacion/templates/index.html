@@ -1,0 +1,1000 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="{% static '/css/index.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    
+
+</head>
+<body>
+
+    
+    
+    <nav class="navbar has-shadow p-2 stiky-var is-transparent is-white">
+        <div class="navbar-brand">
+            <div class="navbar-item">
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <img src="https://bulma.io/assets/brand/Bulma%20Logo.png" alt="logo" style="width: auto;height: 120px;" title="Logo Bulma">
+                </a>
+            </div>
+            <div class="navbar-item">
+                <input class="input is-rounded is-size-7-mobile  is-fullwidth" type="text" placeholder="Buscar productos..." />
+            </div>
+                <a class="navbar-burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+        </div>
+        <!-- menu -->
+         <div class=" navbar-menu" id="navbar-links">
+            <div class="navbar-end">
+                <a href="#" class="navbar-item is-size-6 is-font">Nosotros</a>
+                <a href="#" class="navbar-item">Quienes somos</a>
+                <a href="#" class="navbar-item">Cotiza Ahora</a>
+                <a href="/aplicacion/templates/formulario.html" class="navbar-item p-2"   title="Usuario" >
+                    <button class="button is-rounded p-5" style="border: none;">
+                        <span class="icon">
+                            <i class="fa-solid fa-user" style="color: #183153;font-size:larger;" id="user"></i>
+                        </span>
+                        <span>Iniciar</span>
+                    </button>
+                </a>
+                <div class="navbar-item p-3" >
+                    <button class="button is-rounded p-5" style="border: none;">
+                        <span class="icon">
+                            <i class="fa-solid fa-cart-shopping" style="color: #FFD43B;"  ></i>
+                            <span id="count">0</span>
+                        </span>
+                        <span>Comprar</span>
+                    </button>
+                </div>
+            </div>
+         </div>
+         
+    </nav>
+    <!-- <div id="seccionVentasCarrito"></div> -->
+    <!-- breadcump -->
+     <div class="section pt-0 pt-0 mt-3">
+        <nav class="breadcrumb has-arrow-separator" >
+            <ul>
+                <li><a href="">Shop</a></li>
+                <li><a href="">NewYork</a></li>
+                <li><a href="">Buy</a></li>
+            </ul>
+        </nav>
+     </div>
+     
+
+     
+    <div class="container mt-5">
+        <div class="columns">
+            <div class="column">
+                <h1 class="is-size-1 has-text-weight-semibold has-text-centered mifuenteEncabezado title">El Arte de crear cosas hermosas</h1>
+                <div class="mt-1 p-1">
+                    <p class="has-text-centered">Encuentra el mueble perfecto que transforme tu hogar en un espacio único y acogedor</p>
+                </div>
+            </div>
+        </div>
+        
+         
+
+    
+      
+   <!----------------------------------------------------------------------PARTEA MARRILLA---------------------------------------------------------------------------------------------  -->
+    
+   
+
+    
+    <div class="has-background-warning p-6 temas px-5">
+        <div class="container p-6">
+            <h1 class="mifuenteEncabezado is-size-2 is-info has-text-centered is-10-mobile pb-4 title is-4-mobile">Descubre la belleza y durabilidad de nuestros muebles de madera, creados para transformar tu hogar con elegancia y estilo.</h1>
+            <p class="has-text-centered has-text-weight-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eligendi quibusdam ratione quisquam ut dolorem!</p>
+            </div>
+            <div class="container is-warning is-medium is-size-1 has-text-centered mt-1 is-justify-content-end p-6" >
+                <button class="button is-medium is-rounded instagram-background"  title="Instagram">
+                    <span class="icon">
+                        <i class="fa-brands fa-instagram fa-spin-pulse "></i>
+                        <!-- <i class="fa-brands fa-instagram fa-spin-pulse instagram-background "></i> -->
+                    </span>
+                    <span>
+                        Instagram
+                    </span>
+                </button>
+                
+                </button>
+                <button class="button is-medium is-rounded is-white "  title="Nuestro Facebook" style="background-color: #0866FF;color: white;">
+                    <span class="icon">
+                        <i class="fa-brands fa-facebook"></i>
+                    </span>
+                    <span>
+                        Facebook
+                    </span>
+                </button>
+                <button class="button is-medium is-rounded is-white "  title="Nuestro Telegram" style="background-color: #000000;color: aliceblue;">
+                    <span class="icon">
+                        <i class="fa-brands fa-telegram fa-flip"></i>
+                    </span>
+                    <span>
+                        Telegram
+                    </span>
+                </button>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+</div>
+
+
+    <div class="container mt-6  linea-abajo">
+        <div class="columns">
+            <div class="column">
+                <h1 class="mifuenteEncabezado has-text-centered  is-size-2">Explora Nuestros productos</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------------------------SECCION DE VENTA-----------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="container p-6">
+    <div class="columns is-multiline">
+        <!-- Producto 1 -->
+        <div class="column is-4">
+            <div class="card product-card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="/img/cabecero-austin.png" alt="Producto 1">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h2 class="title is-5">Cabecero Austin</h2>
+                    <p>Cabecero Austin: elegante, moderno y perfecto para realzar tu dormitorio.
+                    </p>
+                    <div class="content">
+                        <strong>Precio:</strong> $10.00
+                    </div>
+                    <div>
+                        <button class=" button p-4" id="red"></button>
+                        <button class=" button" id="beige"></button>
+                        <button class=" button" id="marron"></button>
+                        <button class="button  marginn-button ">
+                            <i class="fa-brands fa-whatsapp" >
+                            </i>
+                        </button>
+                        <button class="button ">
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="column is-4">
+            <div class="card product-card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="/img/cama-misisipi.PNG" alt="Producto 2">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h2 class="title is-5">Cama Misisipi</h2>
+                    <p>Cama Misisipi: diseño acogedor, robusto y ideal para un descanso reparador.</p>
+                    <div class="content">
+                        <strong>Precio:</strong> $20.00
+                    </div>
+                    <div>
+                        <button class=" button p-4" id="red"></button>
+                        <button class=" button p-4" id="beige"></button>
+                        <button class=" button p-4" id="marron"></button>
+                        <button class="button  marginn-button ">
+                            <i class="fa-brands fa-whatsapp" >
+                            </i>
+                        </button>
+                        <button class="button ">
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="column is-4">
+            <div class="card product-card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="/img/cama-filadelfia.png" alt="Producto 3">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <h2 class="title is-5">Cama Filadelfia</h2>
+                    <p>Cama Filadelfia: elegante, moderna y perfecta para un sueño confortable.</p>
+                    <div class="content">
+                        <strong>Precio:</strong> $30.00
+                    </div>
+                    <div>
+                        <button class="p-4 button" id="red"></button>
+                        <button class="p-4 button" id="beige"></button>
+                        <button class="p-4 button" id="marron"></button>
+                        <button class="button  marginn-button ">
+                            <i class="fa-brands fa-whatsapp" >
+                            </i>
+                        </button>
+                        <button class="button ">
+                            <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/cocina-francesa.jpg" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Cocina Francesa</h2>
+            <p> Cocina integral: funcional, moderna y diseñada para maximizar el espacio.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+            <div>
+                <button class="p-4 button" id="red"></button>
+                <button class="p-4 button" id="beige"></button>
+                <button class="p-4 button" id="marron"></button>
+                <button class="button  marginn-button ">
+                    <i class="fa-brands fa-whatsapp" >
+                    </i>
+                </button>
+                <button class="button ">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/cocina-integral-alaska.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Cocina Integral</h2>
+            <p>
+                Cocina integral: funcional, moderna y diseñada para maximizar el espacio.
+            </p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+            <div>
+                <button class="p-4 button" id="red"></button>
+                <button class="p-4 button" id="beige"></button>
+                <button class="p-4 button" id="marron"></button>
+                <button class="button  marginn-button ">
+                    <i class="fa-brands fa-whatsapp" >
+                    </i>
+                </button>
+                <button class="button ">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/sofa-california.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Sofa California</h2>
+            <p>Sofá California: estilo contemporáneo, cómodo y ideal para relajarse.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+            <div>
+                <button class="p-4 button" id="red"></button>
+                <button class="p-4 button" id="beige"></button>
+                <button class="p-4 button" id="marron"></button>
+                <button class="button  marginn-button ">
+                    <i class="fa-brands fa-whatsapp" >
+                    </i>
+                </button>
+                <button class="button ">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/sofa-new-york.png" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Sofa NewYork</h2>
+            <p>Sofá New York: elegante, versátil y perfecto para cualquier ambiente.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+            <div>
+                <button class="p-4 button" id="red"></button>
+                <button class="p-4 button" id="beige"></button>
+                <button class="p-4 button" id="marron"></button>
+                <button class="button  marginn-button ">
+                    <i class="fa-brands fa-whatsapp" >
+                    </i>
+                </button>
+                <button class="button ">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/cama-atlanta-2.jpg" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Cama Atlanta</h2>
+            <p>Cama Atlanta: diseño acogedor, ideal para un descanso reparador.</p>
+            <div class="content">
+                <strong>Precio:</strong> $400.000
+            </div>
+            <div>
+                <button class="p-4 button" id="red"></button>
+                <button class="p-4 button" id="beige"></button>
+                <button class="p-4 button" id="marron"></button>
+                <button class="button  marginn-button ">
+                    <i class="fa-brands fa-whatsapp" >
+                    </i>
+                </button>
+                <button class="button ">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/cama-alabama.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Cama Alabana</h2>
+            <p>Cama Alabama: robusta, con estilo clásico y máxima comodidad.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+            <div>
+                <button class="p-4 button" id="red"></button>
+                <button class="p-4 button" id="beige"></button>
+                <button class="p-4 button" id="marron"></button>
+                <button class="button  marginn-button ">
+                    <i class="fa-brands fa-whatsapp" >
+                    </i>
+                </button>
+                <button class="button ">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/base-cama-houston.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Cama Houston</h2>
+            <p>Cama Houston: moderna, amplia y perfecta para un sueño placentero.
+            </p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+            <div>
+                <button class="p-4 button" id="red"></button>
+                <button class="p-4 button" id="beige"></button>
+                <button class="p-4 button" id="marron"></button>
+                <button class="button  marginn-button ">
+                    <i class="fa-brands fa-whatsapp" >
+                    </i>
+                </button>
+                <button class="button ">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/cama-berlin.png" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Cama Berlin</h2>
+            <p>Cama Berlín: minimalista, elegante y ideal para espacios contemporáneos.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+            <div>
+                <button class="p-4 button" id="red"></button>
+                <button class="p-4 button" id="beige"></button>
+                <button class="p-4 button" id="marron"></button>
+                <button class="button  marginn-button ">
+                    <i class="fa-brands fa-whatsapp" >
+                    </i>
+                </button>
+                <button class="button ">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/nochero-honolulu.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Nochero Honolulu</h2>
+            <p>Nochero Hululu: diseño minimalista, práctico y ideal para cualquier dormitorio.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+            <div>
+                <button class="p-4 button" id="red"></button>
+                <button class="p-4 button" id="beige"></button>
+                <button class="p-4 button" id="marron"></button>
+                <button class="button  marginn-button ">
+                    <i class="fa-brands fa-whatsapp" >
+                    </i>
+                </button>
+                <button class="button ">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/sofa-illinois.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Sofa Illinois</h2>
+            <p>Sofá Illinois: cómodo, elegante y perfecto para cualquier sala de estar.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+            <div>
+                <button class="p-4 button" id="red"></button>
+                <button class="p-4 button" id="beige"></button>
+                <button class="p-4 button" id="marron"></button>
+                <button class="button  marginn-button ">
+                    <i class="fa-brands fa-whatsapp" >
+                    </i>
+                </button>
+                <button class="button ">
+                    <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/nochero-mashville.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Mashville</h2>
+            <p>Nochero Mashville: diseño moderno, funcional y ideal para organizar tu dormitorio.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+	     <div>
+            <button class="p-4 button" id="red"></button>
+            <button class="p-4 button" id="beige"></button>
+            <button class="p-4 button" id="marron"></button>
+            <button class="button  marginn-button ">
+                <i class="fa-brands fa-whatsapp" >
+                </i>
+            </button>
+            <button class="button ">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/silla-de-comedor-virginia.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Virginia</h2>
+            <p>Silla Virginia: elegante, ergonómica y perfecta para cualquier espacio.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.004
+            </div>
+	     <div>
+            <button class="p-4 button" id="red"></button>
+            <button class="p-4 button" id="beige"></button>
+            <button class="p-4 button" id="marron"></button>
+            <button class="button  marginn-button ">
+                <i class="fa-brands fa-whatsapp" >
+                </i>
+            </button>
+            <button class="button ">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/silla-de-comedor-kansas.png" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Kansas</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus!</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+	     <div>
+            <button class="p-4 button" id="red"></button>
+            <button class="p-4 button" id="beige"></button>
+            <button class="p-4 button" id="marron"></button>
+            <button class="button  marginn-button ">
+                <i class="fa-brands fa-whatsapp" >
+                </i>
+            </button>
+            <button class="button ">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/nochero-cincinnati.PNG" alt="cincinnati">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Nochero Cincinnati</h2>
+            <p>Nochero Cincinnati: práctico, estilizado y perfecto para complementar tu dormitorio.</p>
+            <div class="content">
+                <strong>Precio:</strong> $4032.00
+            </div>
+	     <div> 
+            <button class="p-4 button" id="red"></button>
+            <button class="p-4 button" id="beige"></button>
+            <button class="p-4 button" id="marron"></button>
+            <button class="button  marginn-button ">
+                <i class="fa-brands fa-whatsapp" >
+                </i>
+            </button>
+            <button class="button ">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/mesa-de-centro-boston.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Mesa Boston</h2>
+            <p>Mesa Arizona: estilo rústico, robusta y perfecta para reuniones familiares.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+	     <div>
+            <button class="p-4 button" id="red"></button>
+            <button class="p-4 button" id="beige"></button>
+            <button class="p-4 button" id="marron"></button>
+            <button class="button  marginn-button ">
+                <i class="fa-brands fa-whatsapp" >
+                </i>
+            </button>
+            <button class="button ">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/mesa-de-centro-arizona.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Mesa Arizona </h2>
+            <p>Mesa Arizona: estilo rústico, robusta y perfecta para reuniones familiares.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+	     <div>
+            <button class="p-4 button" id="red"></button>
+            <button class="p-4 button" id="beige"></button>
+            <button class="p-4 button" id="marron"></button>
+            <button class="button  marginn-button ">
+                <i class="fa-brands fa-whatsapp" >
+                </i>
+            </button>
+            <button class="button ">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/nochero-indianapolis.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Nochero Indinapolis </h2>
+            <p>Nochero Indianapolis: diseño moderno, funcional y ideal para tu dormitorio.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+	     <div>
+            <button class="p-4 button" id="red"></button>
+            <button class="p-4 button" id="beige"></button>
+            <button class="p-4 button" id="marron"></button>
+            <button class="button  marginn-button ">
+                <i class="fa-brands fa-whatsapp" >
+                </i>
+            </button>
+            <button class="button ">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/silla-de-comedor-kansas.png" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Silla comedor Kansas</h2>
+            <p>Silla de comedor Kansas: elegante, cómoda y perfecta para cualquier espacio.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+	     <div>
+            <button class="p-4 button" id="red"></button>
+            <button class="p-4 button" id="beige"></button>
+            <button class="p-4 button" id="marron"></button>
+            <button class="button  marginn-button ">
+                <i class="fa-brands fa-whatsapp" >
+                </i>
+            </button>
+            <button class="button ">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/comoda-pekin-1.jpg" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Pekin</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, asperiores.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+	     <div>
+            <button class="p-4 button" id="red"></button>
+            <button class="p-4 button" id="beige"></button>
+            <button class="p-4 button" id="marron"></button>
+            <button class="button  marginn-button ">
+                <i class="fa-brands fa-whatsapp" >
+                </i>
+            </button>
+            <button class="button ">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/puff-indiana.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Puff Indiana</h2>
+            <p>Puff Indiana: versátil, cómodo y ideal para cualquier rincón de tu hogar. </p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+	     <div>
+            <button class="p-4 button" id="red"></button>
+            <button class="p-4 button" id="beige"></button>
+            <button class="p-4 button" id="marron"></button>
+            <button class="button  marginn-button ">
+                <i class="fa-brands fa-whatsapp" >
+                </i>
+            </button>
+            <button class="button ">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/mesa-de-centro-miami.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Mesa Miami</h2>
+            <p>Mesa Miami: diseño moderno, versátil y perfecta para espacios contemporáneos.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.000
+            </div>
+	     <div>
+            <button class="p-4 button" id="red"></button>
+            <button class="p-4 button" id="beige"></button>
+            <button class="p-4 button" id="marron"></button>
+            <button class="button  marginn-button ">
+                <i class="fa-brands fa-whatsapp" >
+                </i>
+            </button>
+            <button class="button ">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/sofa-california.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Sofa California</h2>
+            <p> Sofá California: estilo contemporáneo, cómodo y perfecto para cualquier sala de estar.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+	     <div>
+            <button class="p-4 button" id="red"></button>
+            <button class="p-4 button" id="beige"></button>
+            <button class="p-4 button" id="marron"></button>
+            <button class="button  marginn-button ">
+                <i class="fa-brands fa-whatsapp" >
+                </i>
+            </button>
+            <button class="button ">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="column is-4">
+    <div class="card product-card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/img/sofa-tucson.PNG" alt="Producto 4">
+            </figure>
+        </div>
+        <div class="card-content">
+            <h2 class="title is-5">Sofa Tucson  </h2>
+            <p> Sofá Tucson: diseño acogedor, ideal para relajarse y disfrutar en familia.</p>
+            <div class="content">
+                <strong>Precio:</strong> $40.00
+            </div>
+	     <div>
+            <button class="p-4 button" id="red"></button>
+            <button class="p-4 button" id="beige"></button>
+            <button class="p-4 button" id="marron"></button>
+            <button class="button  marginn-button ">
+                <i class="fa-brands fa-whatsapp" >
+                </i>
+            </button>
+            <button class="button ">
+                <i class="fa-solid fa-cart-shopping" style="color: #ffcb0f;"></i>
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Agregar mas productsadasdasd abajo -->
+    </div>
+</div>
+
+
+
+
+ 
+
+
+
+
+
+  
+
+ 
+
+
+
+    
+
+
+
+
+
+<!-- -------------------------------------------------------------NAVIGATION----------------------------------------------------------- -->
+    <div class="container mb-5">
+        <nav class="pagination has-text-centered" role="navigation" aria-label="pagination">
+            <a class="pagination-previous is-disabled has-background-white " title="This is the first page"
+              >Anterior</a
+            >
+            <a href="#" class="pagination-next  has-background-white">Siguiente Pagina</a>
+            <ul class="pagination-list">
+              <li>
+                <a
+                  class="pagination-link is-current"
+                  aria-label="Page 1"
+                  aria-current="page"
+                  >1</a
+                >
+              </li>
+              <li>
+                <a href="#" class="pagination-link has-background-white" aria-label="Goto page 2">2</a>
+              </li>
+              <li>
+                <a href="#" class="pagination-link has-background-white" aria-label="Goto page 3">3</a>
+              </li>
+            </ul>
+          </nav>
+
+    </div>
+    
+    <!-- ----------------------------------------------------------------------FOOOTER ------------------------------------------------------------------------------------- -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Esta pagina esta creada </strong> por <a href="https://www.instagram.com/kaisarasgrimmes/">Cesar Martinez</a>.
+            Desarrolada y modificada
+            <a href="https://www.sena.edu.co/es-co/Paginas/default.aspx">CESAR</a>. The
+            website content is licensed
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0//"
+              >No tiene licencia A</a
+            >.
+          </p>
+        </div>
+        <!-- w -->
+      </footer>
+<!-- 
+---------------------------------------------------------------------------------------SCRIPTS---------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    
+
+
+
+</body>
+</html>
