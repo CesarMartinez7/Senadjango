@@ -4,7 +4,7 @@ body{
     justify-content: center;
     display: flex;
     align-items: center;
-    background: url("");
+    background: url("{% /images/wave-haikei (21).svg%}");
     min-height: 100vh;
     
     

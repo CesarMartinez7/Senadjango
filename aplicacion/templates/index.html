@@ -40,7 +40,7 @@
                 <a href="#" class="navbar-item is-size-6 is-font">Nosotros</a>
                 <a href="#" class="navbar-item">Quienes somos</a>
                 <a href="#" class="navbar-item">Cotiza Ahora</a>
-                <a href="/aplicacion/templates/formulario.html" class="navbar-item p-2"   title="Usuario" >
+                <a href="/aplicacion/templates/formulario_base.html" class="navbar-item p-2"   title="Usuario" >
                     <button class="button is-rounded p-5" style="border: none;">
                         <span class="icon">
                             <i class="fa-solid fa-user" style="color: #183153;font-size:larger;" id="user"></i>
@@ -184,6 +184,11 @@
             </div>
         </div>
 
+{% comment %} 
+----------------------------------------------Prueba------------------------------------------------------------------------- {% endcomment %}
+
+      
+
         
         <div class="column is-4">
             <div class="card product-card">
@@ -193,7 +198,7 @@
                     </figure>
                 </div>
                 <div class="card-content">
-                    <h2 class="title is-5">Cama Misisipi</h2>
+                    <h2 class="title is-5">Cama misisipi</h2>
                     <p>Cama Misisipi: diseño acogedor, robusto y ideal para un descanso reparador.</p>
                     <div class="content">
                         <strong>Precio:</strong> $20.00
@@ -214,7 +219,13 @@
             </div>
         </div>
 
+
+
        
+            
+
+        
+        {% for producto in productos %}
         <div class="column is-4">
             <div class="card product-card">
                 <div class="card-image">
@@ -223,10 +234,10 @@
                     </figure>
                 </div>
                 <div class="card-content">
-                    <h2 class="title is-5">Cama Filadelfia</h2>
-                    <p>Cama Filadelfia: elegante, moderna y perfecta para un sueño confortable.</p>
+                    <h2 class="title is-5">{{producto.nombre}}</h2>
+                    <p>{{producto.descripcion}}</p>
                     <div class="content">
-                        <strong>Precio:</strong> $30.00
+                        <strong>Precio:</strong> {{producto.precio}}
                     </div>
                     <div>
                         <button class="p-4 button" id="red"></button>
@@ -243,7 +254,7 @@
                 </div>
             </div>
         </div>
-        
+        {% endfor %}
 
 <div class="column is-4">
     <div class="card product-card">

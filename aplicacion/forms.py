@@ -12,4 +12,4 @@ class UsuarioFormulario(forms.ModelForm):
             
         
         ]
-    
+
