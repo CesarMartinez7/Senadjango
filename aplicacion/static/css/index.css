@@ -96,7 +96,7 @@
 /* ------------- fondo------------- */
 
 body{
-    background-image: url(/img/wave-haikei\ \(10\).svg);
+    background-image: url({{/img/wave-haikei\ \(10\).svg}});
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
