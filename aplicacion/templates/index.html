@@ -43,7 +43,6 @@
                 <a href="/aplicacion/templates/formulario_base.html" class="navbar-item p-2"   title="Usuario" >
                     <button class="button is-rounded p-4 " style="border: none;">
                         Log in
-                        
                     </button>
                 </a>
                 <div class="navbar-item p-2" >
@@ -56,6 +55,11 @@
                         
                     </button>
                 </div>
+                <a href="#" class="navbar-item sun" id="sun">
+                    <span>
+                        <i class="fa-solid fa-sun" style="color:#FFe09A" ></i>
+                    </span>
+                </a>
             </div>
          </div>
          
@@ -151,13 +155,6 @@
     {% comment %} <!-- -----------------------------------------------SECCION DE VENTA-----------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------- --> {% endcomment %}
 
-
-{% comment %} 
-----------------------------------------------Prueba------------------------------------------------------------------------- {% endcomment %}
-
-
-
-
 <div class="container p-6">
     <div class="columns is-multiline">
         {% for producto in productos %}
@@ -165,7 +162,7 @@
             <div class="card product-card">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img src="/img/cabecero-austin.png" alt="Producto 1">
+                        <img src="" alt="Producto 1">
                     </figure>
                 </div>
                 <div class="card-content">
@@ -248,7 +245,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    <script src="{% static 'js/index.js' %}"></script>
+    <script src="{% static 'js/indexa.js' %}"></script>
     
 
 

@@ -8,15 +8,7 @@ const user=document.getElementById("user")
 // [ ] # haz que al presionar el icono de burger se despiegle la navbar-link
 
 
-iconBurger.addEventListener("click",function(){
-    navLinks.classList.toggle("is-active")
-    navLinks.style.transition="all ease 1s";
-    user.style.alignSelf="center";
-    user.style.transition="all ease 1s";
-    navLinks.style.transition="all ease 1s";
-    
-    
-})
+
 
 
 // contador-productos
@@ -25,7 +17,7 @@ const contadorElement = document.getElementById("count");
 const botonesPresionados = document.querySelectorAll(".presionadocar");
 
 // Inicializamos el contador
-let contador = parseInt(contadorElement.textContent);
+
 
 // Iteramos sobre cada botón y añadimos un event listener
 botonesPresionados.forEach(function(boton) {
@@ -57,13 +49,14 @@ botonwhassap.forEach(function(boton) {
 
 
 
-document.getElementById("windowCar").addEventListener("click",function(event){
-    event.preventDefault()
+const sunMode=document.querySelector(".sun")
 
-    const ventanaSeccionCarrito=document.getElementById("seccionVentasCarrito").innerHTML="HELLOO"
-    
+sunMode.addEventListener("click",(e)=>{
+    document.body.style.backgroundColor="#4E4E4E"
 })
 
 
+console.dir(sunMode)
 
-seccionVentasCarrito
+
+console.log("hello")
