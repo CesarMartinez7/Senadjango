@@ -19,14 +19,21 @@
 
 <body>
 
-  
+  <div id="ventana" class="ventana_confirmacion esconder p-4">
+    <h4>Estas seguro que estos son tus datos?</h4>
+    <p class="is-subtitle">Compruebe sus datos</p>
+    <div class="buttons is-flex ">
+      <button class="is-link button mt-3">Si</button> 
+      <button  class=" is-light is-danger button mt-3" id="cerrar">Cerrar</button> 
+    </div>
+  </div>
   
 <form  method="post">
     {% csrf_token %}
     <div class=" p-6 is-size-1-desktop is-size-1-mobile is-transparent has-shadow sombra" id="formulario">
             <div class="field is-warning is-rounded">
                 <h1 class="title has-text-centered">¡Bienvenido!</h1>
-                <label class="label" for="nombre">Nombre</label>
+                <label class="label" for="nombre">Nombres</label>
                 <div class="control">
                   <input class="input" type="text" placeholder="Juan Pérez" id="nombre" name=nombre required>
                 </div>
@@ -49,7 +56,7 @@
               <div class="field">
                 <label class="label" for="telefono">Telefono</label>
                 <div class="control has-icons-left has-icons-right">
-                  <input class="input is-danger" type="tel" placeholder="Jp2024!Segura" id="contraseña" required name="telefono">
+                  <input class="input is-danger" type="tel" placeholder="(+57) 321542323" id="contraseña" required name="telefono">
                   <span class="icon is-small is-left">
                     <i class="fa-solid fa-mobile-button"></i>
                   </span>
@@ -59,9 +66,6 @@
                 </div>
                 
               </div>
-
-              
-
               <div class="field">
                 <label class="label" for="descripcion">Descripcion</label>
                 <div class="control">
@@ -70,7 +74,7 @@
               </div>
                 <div class="field is-grouped">
         <div class="control">
-          <button class="button is-link" id="submit" type="submit">Enviar</button>
+          <button class="button is-link" id="submit" >Enviar</button>
         </div>
         <div class="control">
           <button class="button is-link is-light">Cancelar</button>
@@ -78,6 +82,7 @@
       </div>
     </div>
       </div>
+      
       
 </form>
     <script src="{% static '/js/formulario.js'%}"></script>

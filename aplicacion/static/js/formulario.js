@@ -1,28 +1,23 @@
+const envioFormulario=document.getElementById("submit")
+const ventanaEmergenteConfirmo=document.getElementById("ventana")
+const cerrar=document.getElementById("cerrar")
 
+// EVENTO DE VENTANA EMERGENTE
 
-const formulario=document.getElementById("formulario")
-
-const nombre = document.getElementById("nombre")
-const correo = document.getElementById("correo")
-const contraseña= document.getElementById("contraseña")
-
-
-
-// document.addEventListener("DOMContentLoaded",function(){
-//     nombre.focus()
-// })
-
-
-document.addEventListener("DOMContentLoaded",()=>{
-    nombre.focus()
+envioFormulario.addEventListener("click",function(e){
+    if(ventanaEmergenteConfirmo.classList.contains("esconder")){
+        ventanaEmergenteConfirmo.classList.remove("esconder")
+    }else{
+        ventanaEmergenteConfirmo.classList.add("esconder")
+    }
 })
 
 
-formulario.addEventListener("submit",function(event){
-    const nombre=document.getElementById("nombre").value
-    const correo=document.getElementById("correo").value
-    const contraseña=document.getElementById("contraseña").value
 
-    document.writeln(`<h1>${nombre}   ${contraseña}  ${correo}</h1>`)
-
+cerrar.addEventListener("click",function(event){
+    if(ventanaEmergenteConfirmo.classList.contains("esconder")){
+        ventanaEmergenteConfirmo.classList.remove("esconder")
+    }else{
+        ventanaEmergenteConfirmo.classList.add("esconder")
+    }
 })
