@@ -1,3 +1,5 @@
+
+
 #carritoCompra{
     align-items: center;
     align-content: center;
@@ -16,7 +18,7 @@
 #seccionVentasCarrito{
   background-color: #ee6e1e;
   display: flex;
-  color: white;
+  color: rgb(254, 8, 8);
   transition: all ease 1s;
   filter: blur(1px);
   position: fixed;
@@ -96,19 +98,12 @@
 /* ------------- fondo------------- */
 
 body{
-    background-image: url({{/img/wave-haikei\ \(10\).svg}});
+    background-image: url("../images/hakei.svg");
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
     
 } 
-
-
-
-
-body{
-  cursor: url("/cur/arrow-pointer-solid\ \(3\).svg"), auto;
-}
 
 
 .instagram-background:hover{
